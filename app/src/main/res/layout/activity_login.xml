@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b1"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/LoginText"
+        style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+        android:layout_width="408dp"
+        android:layout_height="94dp"
+        android:background="#57BF42"
+        android:ems="10"
+        android:inputType="none"
+        android:text="innovatelN48_DigitalDynasty"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#455A64"
+        android:textSize="55px"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-4dp" />
+
+    <TextView
+        android:id="@+id/LoginPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text=" Enter Your Login Details "
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginText" />
+
+
+    <EditText
+        android:id="@+id/CustomerId"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:background="#005E4A4A"
+        android:ems="10"
+        android:hint="Customer Id"
+        android:tooltipText="Please Enter Your Customer Id"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/LoginPage"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPage" />
+    <EditText
+        android:id="@+id/passCode"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:background="#005E4A4A"
+        android:ems="10"
+        android:hint="Password"
+
+        android:inputType="textPassword"
+
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/CustomerId"
+        app:layout_constraintTop_toBottomOf="@+id/CustomerId" />
+    <TextView
+        android:id="@+id/tvAuthStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="  "
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passCode"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <TextView
+        android:id="@+id/biometeric"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:background="#005E4A4A"
+
+        android:inputType="none"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAuthStatus"
+        app:layout_constraintTop_toBottomOf="@+id/tvAuthStatus"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnOkay"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:background="#57BF42"
+        android:backgroundTint="#4CAF50"
+        android:text="Okay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/biometeric"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

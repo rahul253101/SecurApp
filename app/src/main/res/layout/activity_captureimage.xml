@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b1"
+    tools:context=".CameraActivity">
+
+    <TextView
+        android:id="@+id/LoginText"
+        style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+        android:layout_width="408dp"
+        android:layout_height="94dp"
+        android:background="#57BF42"
+        android:ems="10"
+        android:inputType="none"
+        android:text="innovatelN48_DigitalDynasty"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#455A64"
+        android:textSize="55px"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-4dp" />
+
+    <TextView
+        android:id="@+id/LoginPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text=" Capturing Image  "
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginText" />
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp"
+        >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_marginTop="155dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/LoginPage"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+    <!--<androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_marginTop="170dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPage"/> -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">secureLoginVision</string>
+    <string name="preview_area">image</string>
+    <string name="capture">CapturedImage</string>
+</resources>

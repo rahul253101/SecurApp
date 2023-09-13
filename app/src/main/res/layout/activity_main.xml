@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/editText"
+        style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+        android:layout_width="408dp"
+        android:layout_height="94dp"
+        android:background="#57BF42"
+        android:ems="10"
+        android:inputType="none"
+        android:text="innovatelN48_DigitalDynasty"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#455A64"
+        android:textSize="55px"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-4dp" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Welcome to Secure App "
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/tvAuthStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtStatus" />
+
+
+    <Button
+        android:id="@+id/SecureLogin"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#57BF42"
+        android:backgroundTint="#4CAF50"
+        android:text="Biometric login"
+        android:tooltipText="App authenticate using biometrics"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.383"
+        app:layout_constraintTop_toBottomOf="@+id/tvAuthStatus"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#57BF42"
+        android:backgroundTint="#4CAF50"
+        android:text="login"
+        android:tooltipText="App authenticate no biometric features available on this device"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383"
+        app:layout_constraintTop_toBottomOf="@+id/SecureLogin"/>
+
+
+    <Button
+        android:id="@+id/btnRegis"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="#57BF42"
+        android:backgroundTint="#4CAF50"
+        android:text="Registration"
+        android:tooltipText="New Customer Registration"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.714" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
